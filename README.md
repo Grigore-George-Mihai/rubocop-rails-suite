@@ -8,9 +8,9 @@
 - [`rubocop-rails`](https://github.com/rubocop/rubocop-rails) - Rails-specific linting rules.
 - [`rubocop-performance`](https://github.com/rubocop/rubocop-performance) - Rules focused on optimizing Ruby performance.
 - [`rubocop-rspec`](https://github.com/rubocop/rubocop-rspec) - Linting rules for RSpec tests.
-- [`rubocop-factory_bot`](https://github.com/rubocop-hq/rubocop-factory_bot) - Linting rules for `factory_bot` usage.
-- [`rubocop-faker`](https://github.com/nebulab/rubocop-faker) - Linting rules for `faker` usage.
-- [`rubocop-migration`](https://github.com/xavier/rubocop-migration) - Best practices for database migrations.
+- [`rubocop-factory_bot`](https://github.com/rubocop/rubocop-factory_bot) - Linting rules for `factory_bot` usage.
+- [`rubocop-faker`](https://github.com/koic/rubocop-faker) - Linting rules for `faker` usage.
+- [`rubocop-migration`](https://github.com/r7kamura/rubocop-migration) - Best practices for database migrations.
 - [`rubocop-rake`](https://github.com/rubocop/rubocop-rake) - Linting rules for Rake tasks.
 
 ## Installation
