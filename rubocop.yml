@@ -1,0 +1,99 @@
+inherit_mode:
+  merge:
+    - Exclude
+
+# Enable RuboCop plugins
+require:
+  - rubocop-performance
+  - rubocop-rails
+  - rubocop-factory_bot
+  - rubocop-faker
+  - rubocop-migration
+  - rubocop-rake
+  - rubocop-rspec
+
+# General configuration for all cops
+AllCops:
+  NewCops: enable
+  SuggestExtensions: false
+  TargetRubyVersion: 3.0
+  Exclude:
+    - "db/schema.rb"
+    - "config/**/*"
+    - "bin/*"
+
+# Enable Rails-related cops
+Rails:
+  Enabled: true
+
+# Enable Performance-related cops
+Performance:
+  Enabled: true
+
+# Enable RSpec-related cops
+RSpec:
+  Enabled: true
+
+# Enable Rake-related cops
+Rake:
+  Enabled: true
+
+# Enable FactoryBot-related cops
+FactoryBot:
+  Enabled: true
+
+# Enable Faker-related cops
+Faker:
+  Enabled: true
+
+# Enable Migration-related cops
+Migration/AddCheckConstraint:
+  Enabled: true
+
+# Layout and Style Cops for Consistency
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: true
+  Exclude:
+    - "config/**/*"
+
+Layout/EmptyLinesAroundBlockBody:
+  Enabled: true
+
+Layout/EndAlignment:
+  Enabled: true
+  EnforcedStyleAlignWith: variable
+
+Lint/RequireParentheses:
+  Enabled: true
+
+Style/TrailingCommaInArrayLiteral:
+  Enabled: true
+
+Style/TrailingCommaInHashLiteral:
+  Enabled: true
+
+Style/HashSyntax:
+  Enabled: true
+  EnforcedShorthandSyntax: either
+
+Layout/SpaceInsideBlockBraces:
+  Enabled: true
+  EnforcedStyleForEmptyBraces: space
+
+Style/ColonMethodCall:
+  Enabled: true
+
+Lint/UriEscapeUnescape:
+  Enabled: true
+
+Style/StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+  Include:
+    - "app/**/*"
+    - "lib/**/*"
+    - "test/**/*"
+    - "Gemfile"
