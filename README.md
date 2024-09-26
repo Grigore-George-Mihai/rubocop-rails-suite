@@ -10,8 +10,6 @@
 - [`rubocop-rspec`](https://github.com/rubocop/rubocop-rspec) - Linting rules for RSpec tests.
 - [`rubocop-factory_bot`](https://github.com/rubocop/rubocop-factory_bot) - Linting rules for `factory_bot` usage.
 - [`rubocop-faker`](https://github.com/koic/rubocop-faker) - Linting rules for `faker` usage.
-- [`rubocop-migration`](https://github.com/r7kamura/rubocop-migration) - Best practices for database migrations.
-- [`rubocop-rake`](https://github.com/rubocop/rubocop-rake) - Linting rules for Rake tasks.
 
 ## Installation
 

@@ -8,8 +8,6 @@ require:
   - rubocop-rails
   - rubocop-factory_bot
   - rubocop-faker
-  - rubocop-migration
-  - rubocop-rake
   - rubocop-rspec
 
 # General configuration for all cops
@@ -34,20 +32,12 @@ Performance:
 RSpec:
   Enabled: true
 
-# Enable Rake-related cops
-Rake:
-  Enabled: true
-
 # Enable FactoryBot-related cops
 FactoryBot:
   Enabled: true
 
 # Enable Faker-related cops
 Faker:
-  Enabled: true
-
-# Enable Migration-related cops
-Migration/AddCheckConstraint:
   Enabled: true
 
 # Layout and Style Cops for Consistency
