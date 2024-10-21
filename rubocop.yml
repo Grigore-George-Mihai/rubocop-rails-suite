@@ -40,7 +40,7 @@ FactoryBot:
 Faker:
   Enabled: true
 
-# Layout and Style Cops for Consistency
+# Style Cops
 Style/Documentation:
   Enabled: false
 
@@ -48,16 +48,6 @@ Style/FrozenStringLiteralComment:
   Enabled: true
   Exclude:
     - "config/**/*"
-
-Layout/EmptyLinesAroundBlockBody:
-  Enabled: true
-
-Layout/EndAlignment:
-  Enabled: true
-  EnforcedStyleAlignWith: variable
-
-Lint/RequireParentheses:
-  Enabled: true
 
 Style/TrailingCommaInArrayLiteral:
   Enabled: true
@@ -69,14 +59,7 @@ Style/HashSyntax:
   Enabled: true
   EnforcedShorthandSyntax: either
 
-Layout/SpaceInsideBlockBraces:
-  Enabled: true
-  EnforcedStyleForEmptyBraces: space
-
 Style/ColonMethodCall:
-  Enabled: true
-
-Lint/UriEscapeUnescape:
   Enabled: true
 
 Style/StringLiterals:
@@ -84,6 +67,40 @@ Style/StringLiterals:
   EnforcedStyle: double_quotes
   Include:
     - "app/**/*"
+    - "config/**/*"
     - "lib/**/*"
     - "test/**/*"
     - "Gemfile"
+
+# Layout Cops
+Layout/EmptyLinesAroundBlockBody:
+  Enabled: true
+
+Layout/EndAlignment:
+  Enabled: true
+  EnforcedStyleAlignWith: variable
+
+Layout/SpaceInsideBlockBraces:
+  Enabled: true
+  EnforcedStyleForEmptyBraces: space
+
+Layout/LineLength:
+  Max: 130
+
+# Lint Cops
+Lint/RequireParentheses:
+  Enabled: true
+
+Lint/UriEscapeUnescape:
+  Enabled: true
+
+# Metrics Cops
+Metrics/MethodLength:
+  Max: 17
+
+# RSpec Cops
+RSpec/MultipleExpectations:
+  Max: 5
+
+RSpec/MultipleMemoizedHelpers:
+  Max: 6

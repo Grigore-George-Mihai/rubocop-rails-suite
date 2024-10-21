@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.1] - 2024-10-21
+### Added
+- Added some default rules for RuboCop configuration.
+
 ## [1.1.0] - 2024-09-26
 ### Changed
 - Updated `rubocop` dependency to `>= 1.63.1, < 2.0`.
