@@ -17,7 +17,6 @@ AllCops:
   TargetRubyVersion: 3.0
   Exclude:
     - "db/schema.rb"
-    - "config/**/*"
     - "bin/*"
 
 # Enable Rails-related cops
@@ -69,6 +68,7 @@ Style/StringLiterals:
     - "app/**/*"
     - "config/**/*"
     - "lib/**/*"
+    - "spec/**/*"
     - "test/**/*"
     - "Gemfile"
 

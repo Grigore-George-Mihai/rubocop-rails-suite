@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.2] - 2024-10-23
+### Changed
+- Enforced double quotes in RuboCop configuration for `config/**/*` and `spec/**/*` directories.
+
 ## [1.1.1] - 2024-10-21
 ### Added
 - Added some default rules for RuboCop configuration.
