@@ -1,2 +1,3 @@
 # Ignore built gem files
 *.gem
+/.idea/
