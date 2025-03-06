@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.2.0] - 2025-03-03
+### Changed
+- Add support for plugins.
+- Add latest versions.
+
 ## [1.1.3] - 2025-02-20
 ### Changed
 - Add support for rubocop 1.72.

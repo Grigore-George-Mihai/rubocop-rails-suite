@@ -1,21 +1,20 @@
-inherit_mode:
-  merge:
-    - Exclude
-
-# Enable RuboCop plugins
 plugins:
-  - rubocop-performance
   - rubocop-rails
+  - rubocop-performance
   - rubocop-factory_bot
   - rubocop-faker
   - rubocop-rspec
+
+inherit_mode:
+  merge:
+    - Exclude
 
 # General configuration for all cops
 AllCops:
   NewCops: enable
   SuggestExtensions: false
-  TargetRubyVersion: 3.0
   Exclude:
+    - 'db/migrate/**/*'
     - "db/schema.rb"
     - "bin/*"
 
@@ -47,6 +46,9 @@ Style/FrozenStringLiteralComment:
   Enabled: true
   Exclude:
     - "config/**/*"
+    - "Gemfile"
+    - "Rakefile"
+    - "config.ru"
 
 Style/TrailingCommaInArrayLiteral:
   Enabled: true
@@ -103,4 +105,7 @@ RSpec/MultipleExpectations:
   Max: 5
 
 RSpec/MultipleMemoizedHelpers:
+  Max: 6
+
+RSpec/ExampleLength:
   Max: 6

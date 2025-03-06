@@ -31,12 +31,10 @@ To enable the Rubocop Rails Suite in your project, create or update your .ruboco
 inherit_gem:
   rubocop-rails-suite: rubocop.yml
 
-# Specify your Ruby version
-AllCops:
-  TargetRubyVersion: 3.0
+# Your own rules go here
 ```
 
-This will import the suite's recommended RuboCop rules for Rails projects, including rules for performance, RSpec, factory_bot, faker, and migration linting.
+This will import the suite's recommended RuboCop rules for Rails projects, including rules for performance, RSpec, factory_bot, faker, and more.
 
 Run RuboCop to check your code:
 ```bash
