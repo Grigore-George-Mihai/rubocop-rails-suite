@@ -31,6 +31,10 @@ To enable the Rubocop Rails Suite in your project, create or update your .ruboco
 inherit_gem:
   rubocop-rails-suite: rubocop.yml
 
+# Specify your Ruby version
+AllCops:
+  TargetRubyVersion: 3.x
+
 # Your own rules go here
 ```
 
