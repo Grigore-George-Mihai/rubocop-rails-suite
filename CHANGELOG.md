@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.3.0] - 2025-08-14
+### Changed
+- Add latest versions.
+
 ## [1.2.0] - 2025-03-03
 ### Changed
 - Add support for plugins.

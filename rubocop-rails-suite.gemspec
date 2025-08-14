@@ -28,11 +28,11 @@ Gem::Specification.new do |spec|
     CHANGELOG.md
   ]
 
-  # Dependencies
-  spec.add_dependency "rubocop", "~> 1.73.2"
-  spec.add_dependency "rubocop-rails", "~> 2.30.3"
-  spec.add_dependency "rubocop-performance", "~> 1.24.0"
-  spec.add_dependency "rubocop-factory_bot", "~> 2.27.0"
-  spec.add_dependency "rubocop-faker", "~> 1.3.0"
-  spec.add_dependency "rubocop-rspec", "~> 3.5.0"
+  # Dependencies (updated)
+  spec.add_dependency "rubocop",              "~> 1.79"
+  spec.add_dependency "rubocop-rails",        "~> 2.33"
+  spec.add_dependency "rubocop-performance",  "~> 1.25"
+  spec.add_dependency "rubocop-factory_bot",  "~> 2.27"
+  spec.add_dependency "rubocop-faker",        "~> 1.3"
+  spec.add_dependency "rubocop-rspec",        "~> 3.6"
 end
