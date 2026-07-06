@@ -1,0 +1,46 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.4"
+          bundler-cache: true
+
+      - name: Lint with the bundled config
+        run: bundle exec rubocop
+
+  package:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        ruby: ["3.3", "3.4", "4.0"]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: ${{ matrix.ruby }}
+
+      - name: Build and install the gem
+        run: |
+          gem build rubocop-rails-suite.gemspec
+          gem install rubocop-rails-suite-*.gem
+
+      - name: Smoke-test the installed gem
+        run: |
+          ruby -e 'require "rubocop-rails-suite"; puts Rubocop::Rails::Suite::VERSION'
+          mkdir smoke && cd smoke
+          printf 'inherit_gem:\n  rubocop-rails-suite: rubocop.yml\n' > .rubocop.yml
+          printf '# frozen_string_literal: true\n\nputs "hello"\n' > sample.rb
+          rubocop sample.rb

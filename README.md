@@ -1,6 +1,9 @@
 # Rubocop Rails Suite
 
-**Rubocop Rails Suite** is a comprehensive suite of RuboCop configurations tailored for Ruby on Rails applications. This gem enhances your Rails code quality by bundling essential RuboCop extensions for performance, testing, and best practices. It requires at least Ruby version 3.0.0 to function properly.
+[![CI](https://github.com/Grigore-George-Mihai/rubocop-rails-suite/actions/workflows/ci.yml/badge.svg)](https://github.com/Grigore-George-Mihai/rubocop-rails-suite/actions/workflows/ci.yml)
+[![Gem Version](https://badge.fury.io/rb/rubocop-rails-suite.svg)](https://rubygems.org/gems/rubocop-rails-suite)
+
+**Rubocop Rails Suite** is a comprehensive suite of RuboCop configurations tailored for Ruby on Rails applications. This gem enhances your Rails code quality by bundling essential RuboCop extensions for performance, testing, and best practices. It requires at least Ruby version 3.3.0 to function properly.
 
 ## Gems Included:
 
@@ -31,9 +34,9 @@ To enable the Rubocop Rails Suite in your project, create or update your .ruboco
 inherit_gem:
   rubocop-rails-suite: rubocop.yml
 
-# Specify your Ruby version
+# Specify your Ruby version (e.g. 3.4)
 AllCops:
-  TargetRubyVersion: 3.x
+  TargetRubyVersion: 3.4
 
 # Your own rules go here
 ```

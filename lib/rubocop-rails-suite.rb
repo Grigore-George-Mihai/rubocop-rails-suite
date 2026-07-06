@@ -1,11 +1,3 @@
-require "rubocop"
-require "rubocop-rails"
-require "rubocop-performance"
-require "rubocop-factory_bot"
-require "rubocop-faker"
-require "rubocop-rspec"
+# frozen_string_literal: true
 
-# Stub to ensure Bundler loads the gem quietly.
-module RubocopRailsSuite
-	# Additional customizations can be added here if needed.
-end
+require_relative "rubocop/rails/suite"

@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.4.0] - 2026-07-06
+### Added
+- GitHub Actions CI: self-lint with the bundled config, plus build, install, and smoke-test the packaged gem (`require` + `inherit_gem`) on Ruby 3.3 / 3.4 / 4.0.
+
+### Fixed
+- Package `lib/` in the gem: `require "rubocop-rails-suite"` raised `LoadError` because no Ruby files were shipped.
+- Fixed invalid `TargetRubyVersion: 3.x` example in the README.
+
+### Changed
+- **Breaking:** dropped support for Ruby 3.0, 3.1, and 3.2 (all EOL); the minimum Ruby version is now 3.3.
+- Requiring the gem now loads only the version constant; RuboCop loads the bundled extensions itself via the `plugins:` list in `rubocop.yml`, so nothing is added to app boot.
+- Removed redundant config entries from `rubocop.yml` that matched RuboCop defaults (no behavior change).
+- Added `changelog_uri` and `rubygems_mfa_required` gemspec metadata.
+
 ## [1.3.0] - 2025-08-14
 ### Changed
 - Add latest versions.

@@ -1,0 +1,7 @@
+# Self-lint using the config this gem ships.
+# TargetRubyVersion is inferred from required_ruby_version in the gemspec.
+inherit_from: rubocop.yml
+
+Naming/FileName:
+  Exclude:
+    - "lib/rubocop-rails-suite.rb" # entry point must match the gem name

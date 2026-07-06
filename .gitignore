@@ -1,3 +1,10 @@
 # Ignore built gem files
 *.gem
+/pkg/
+
+# Bundler
+/.bundle/
+Gemfile.lock
+
+# IDE
 /.idea/
